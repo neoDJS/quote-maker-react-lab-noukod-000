@@ -49,6 +49,8 @@ class QuoteForm extends Component {
                         className="form-control"
                         type="text"
                         value={this.state.author}
+                        name='author'
+                        onChange={this.handleOnChange}
                       />
                     </div>
                   </div>
