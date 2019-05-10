@@ -14,10 +14,10 @@ export const removeQuote = quoteId => {
   };
 };
 
-export const addQuote = quote => {
+export const upvoteQuote = quoteId => {
   return {
-    type: 'ADD_QUOTE',
-    quote
+    type: 'UPVOTE_QUOTE',
+    quoteId
   };
 };
 
