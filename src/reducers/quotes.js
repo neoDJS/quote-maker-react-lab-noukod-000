@@ -10,7 +10,7 @@ export default (state = [], action) => {
     case "UPVOTE_QUOTE":
       return state.map(quote => quote.id == action.quoteId ? {...quote, votes: quote.votes+1} : quote);
 
-    case "DOWN_VOTE_QUOTE":
+    case "DOWNVOTE_QUOTE":
       return state.map(quote => quote.id == action.quoteId ? {...quote, votes: quote.votes-1} : quote);
 
     default:
