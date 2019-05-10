@@ -10,7 +10,7 @@ export default (state = [], action) => {
       return state.filter(quote=> quote.id !== action.quoteId);
 
     case "UP_VOTE_QUOTE":
-      return state.map(quote => quote.id == action.quoteId ? {...quote, vote: quote.vote+1} : quote);
+      return state.map(quote => quote.id == action.quoteId ? {...quote, votes: quote.votes+1} : quote);
 
     case "DOWN_VOTE_QUOTE":
       let existingAuthor = state.filter(
