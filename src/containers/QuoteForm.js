@@ -6,7 +6,6 @@ import { addQuote } from '../actions/quotes';
 class QuoteForm extends Component {
 
   state = {
-    id:'',
     content:'',
     author:'',
     votes:0
