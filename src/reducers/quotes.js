@@ -1,5 +1,3 @@
-import uuid from 'uuid';
-
 export default (state = [], action) => {
   let idx;
   switch (action.type) {
