@@ -6,3 +6,24 @@ export const addQuote = quote => {
     quote
   };
 };
+
+export const removeQuote = quoteId => {
+  return {
+    type: 'REMOVE_QUOTE',
+    quoteId
+  };
+};
+
+export const addQuote = quote => {
+  return {
+    type: 'ADD_QUOTE',
+    quote
+  };
+};
+
+export const addQuote = quote => {
+  return {
+    type: 'ADD_QUOTE',
+    quote
+  };
+};
