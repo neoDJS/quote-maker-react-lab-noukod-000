@@ -29,4 +29,4 @@ class Quotes extends Component {
 }
 
 //add arguments to connect as needed
-export default connect()(Quotes);
+export default connect(state=>({quotes: state.quotes}),{removeQuote, upvoteQuote, downvoteQuote})(Quotes);
