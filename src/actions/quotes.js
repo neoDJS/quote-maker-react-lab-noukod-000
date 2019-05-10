@@ -3,6 +3,6 @@
 export const addQuote = author => {
   return {
     type: 'ADD_QUOTE',
-    author
+    quote
   };
 };
