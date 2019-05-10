@@ -6,6 +6,10 @@ import { addQuote } from '../actions/quotes';
 class QuoteForm extends Component {
 
   state = {
+    id:'',
+    content:'',
+    author:'',
+    votes:0
     //set up a controlled form with internal state
   }
 
@@ -15,6 +19,7 @@ class QuoteForm extends Component {
 
   handleOnSubmit = event => {
     // Handle Form Submit event default
+    event.preventDefault();
     // Create quote object from state
     // Pass quote object to action creator
     // Update component state to return to default state
