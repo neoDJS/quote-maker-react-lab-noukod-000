@@ -39,6 +39,8 @@ class QuoteForm extends Component {
                       <textarea
                         className="form-control"
                         value={this.state.content}
+                        name='content'
+                        onChange={this.handleOnChange}
                       />
                     </div>
                   </div>
