@@ -13,14 +13,7 @@ export default (state = [], action) => {
       return state.map(quote => quote.id == action.quoteId ? {...quote, votes: quote.votes+1} : quote);
 
     case "DOWN_VOTE_QUOTE":
-      let existingAuthor = state.filter(
-        author => author.authorName === action.book.authorName
-      );
-      if (existingAuthor.length > 0) {
-        return state;
-      } else {
-        return [...state, { authorName: action.book.authorName, id: uuid() }];
-      }
+      return state.map(quote => quote.id == action.quoteId ? {...quote, votes: quote.votes-1} : quote);
 
     default:
       return state;
